@@ -84,7 +84,7 @@
                 android:textSize="20dp"
                 android:drawableTop="@drawable/ic_close_black_24dp"
                 android:id="@+id/button4"
-                android:background="@color/lightPrimary"
+                android:background="@color/divierColor"
                 android:layout_weight="1"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/colorPrimaryDark"
