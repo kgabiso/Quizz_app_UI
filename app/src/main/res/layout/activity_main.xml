@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divierColor"
+    tools:context="com.example.codetribe.quizz_app_ui.MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/include"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="left|bottom"
+            android:layout_below="@+id/include"
+            android:id="@+id/linearLayout">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="programming Quizz"
+                android:id="@+id/programing"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/lightPrimary"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:drawableTop="@drawable/ic_laptop_mac_black_24dp"
+                android:layout_below="@+id/include"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Quizz"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:background="@color/lightPrimary"
+                android:id="@+id/car"
+                android:textSize="20dp"
+                android:drawableTop="@drawable/ic_directions_car_black_24dp"
+                android:layout_below="@+id/button"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="right|bottom"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignParentEnd="true">
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:text="Social Network quizz"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/button3"
+                android:background="@color/lightPrimary"
+                android:drawableTop="@drawable/ic_camera_front_black_24dp"
+                android:layout_weight="1" />
+            <Button
+                android:paddingTop="15dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:textSize="20dp"
+                android:drawableTop="@drawable/ic_close_black_24dp"
+                android:id="@+id/button4"
+                android:background="@color/lightPrimary"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
